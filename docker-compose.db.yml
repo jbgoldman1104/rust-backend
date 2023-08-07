@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  # Redis
+  redis:
+    image: eqalpha/keydb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./.data/db:/data/db
