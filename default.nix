@@ -8,6 +8,17 @@ in pkgs.mkShell {
   name = "revoltEnv";
 
   # LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+  #   pkgs.gcc-unwrapped
+  #   pkgs.zlib
+  #   pkgs.glib
+  #   pkgs.libGL
+  # ];
+
+  buildInputs = [
+    # Tools
+    pkgs.git
+
+    # Database
     # pkgs.mongodb
 
     # Rust
