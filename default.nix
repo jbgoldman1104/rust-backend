@@ -3,6 +3,12 @@ let
   pkgs = import (fetchTarball("https://github.com/NixOS/nixpkgs/archive/bb9707ef2ea4a5b749b362d5cf81ada3ded2c53f.tar.gz")) {};
 
   # Rolling updates, not deterministic.
+  # pkgs = import (fetchTarball("channel:nixpkgs-unstable")) {};
+in pkgs.mkShell {
+  name = "revoltEnv";
+
+  # LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+  #   pkgs.gcc-unwrapped
   #   pkgs.zlib
   #   pkgs.glib
   #   pkgs.libGL
