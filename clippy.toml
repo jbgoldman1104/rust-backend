@@ -1,4 +1,3 @@
-disallowed-methods = [
     # Shouldn't need to access these directly
     "revolt_database::models::bots::model::Bot::remove_field",
     "revolt_database::models::messages::model::Message::attach_sendable_embed",
