@@ -18,16 +18,3 @@ in pkgs.mkShell {
     # Tools
     pkgs.git
 
-    # Database
-    # pkgs.mongodb
-
-    # Rust
-    pkgs.cargo
-    pkgs.rustc
-    pkgs.clippy
-    pkgs.pkgconfig
-    pkgs.openssl.dev
-  ];
-
-  RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
-}
