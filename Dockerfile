@@ -1,3 +1,4 @@
+# Build Stage
 FROM --platform="${BUILDPLATFORM}" rust:1.70.0-slim
 USER 0:0
 WORKDIR /home/rust/src
